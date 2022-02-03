@@ -7,14 +7,21 @@ public class Environment : MonoBehaviour
     [SerializeField] float backgroundSpeed = 0.1f;
 
     private MeshRenderer meshRenderer;
+    private bool isMoving = true;
 
     private void Awake()
     {
         meshRenderer = GetComponent<MeshRenderer>();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        meshRenderer.material.mainTextureOffset += new Vector2(backgroundSpeed * Time.deltaTime, 0);
+        if (!isMoving) { return; }
+        meshRenderer.material.mainTextureOffset += new Vector2(backgroundSpeed * 0.02f, 0);
+    }
+
+    public void StopEnvironment()
+    {
+        isMoving = false;
     }
 }

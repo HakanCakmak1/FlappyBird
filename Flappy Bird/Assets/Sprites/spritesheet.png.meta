@@ -285,7 +285,7 @@ TextureImporter:
   maxTextureSize: 4096
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -2048,8 +2048,8 @@ TextureImporter:
       sprites_20: 21300114
       sprites_21: 21300116
       sprites_73: 21300064
-      sprites_23: 21300120
       sprites_69: 21300164
+      sprites_23: 21300120
       sprites_43: 21300004
       sprites_12: 21300098
       sprites_45: 21300008
